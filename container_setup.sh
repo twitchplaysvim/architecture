@@ -12,6 +12,8 @@ docker run -it -d \
   --ulimit core=0 \
   --ulimit fsize=1000000 \
   --ulimit nofile=4096 \
+  --ulimit nproc=8192 \
+  --cpus=0.1 \
   --memory=512M \
   --memory-swap=0 \
   --memory-swappiness=0 \
